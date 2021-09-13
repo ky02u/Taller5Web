@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro Usuario</title>
+	<link href="https://fonts.googleapis.com/css2?family=Helvetica :wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<style>
+	body {
+		text-align: center;
+		background: rgba(24, 112, 228, 0.3)
+	}
+
+	form {
+		display: inline-block;
+	}
+
+	.signup-form .form-group {
+		margin-bottom: 20px;
+	}
+
+	div {
+
+		font: condensed 100% sans-serif;
+		color: rgb(0, 0, 0);
+	}
+
+	fieldset {
+		color: rgb(0, 0, 0);
+		background: #ffffff;
+		font-family: 'Helvetica ', sans-serif;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		color: whtite;
+	}
+
+	legend {
+		font: condensed 200% sans-serif;
+		margin-bottom: 0px;
+		margin-left: 16px;
+		color: rgb(255, 255, 255);
+	}
+</style>
+<form action="user1.php" method="post" target="_blank"></form>
+
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<h2>Registro Usuario</h2>
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre tiene que ser de maximo 25 caracteres.</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El apellido tiene que ser de maximo 25 caracteres</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__direccion">
+				<label for="direccion" class="formulario__label">Direccion</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="direccion" id="direccion"
+						placeholder="ej: cll 8a #32-07">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La direccion debe empezar con cll, cra, av, anv, trans.</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__id">
+				<label for="id" class="formulario__label">ID</label>
+				<div class="formulario__grupo-input">
+					<input type="number" class="formulario__input" name="id" id="id">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Solo numeros.</p>
+			</div>
+			<div class="formulario__grupo" id="pais">Pais
+
+				<select class="browser-default custom-select">
+					<option selected>Open this select menu</option>
+					<option value="1">Colombia</option>
+					<option value="1">China</option>
+					<option value="1">Ecuador</option>
+					<option value="1">Peru</option>
+					<option value="1">Brazil</option>
+					<option value="1">Argentina</option>
+					<option value="1">Peru</option>
+					<option value="2">USA</option>
+					<option value="3">Japon</option>
+					<option value="3">Otros</option>
+				</select>
+			</div>
+			</div>
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo"
+						placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+					guion bajo.</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="usuarionuevo210333">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 10 a 20 caracteres y solo puede contener
+					numeros, letras.</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña debe tener minimo 15 caracteres,1 mayuscula,1 numero y
+					1 caracter(#,%,/,&).</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123456789">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.
+				</p>
+			</div>
+			<div>
+				Seleccione color favorito:<br>
+				<label><input type="radio" name="color" value="verde" required> Verde</label><br>
+				<label><input type="radio" name="color" value="azul"> Azul</label><br>
+				<label><input type="radio" name="color" value="rojo"> Rojo</label> <br>
+				<label><input type="radio" name="color" value="">Otro <input type="text" name="other_reason" /></label>
+			</div>
+			<div>
+				Seleccione Marca de carro favorito:<br>
+				<label><input type="radio" name="marcacarro" value="toyota" required> Toyota</label><br>
+				<label><input type="radio" name="marcacarro" value="volkswagen"> Volkswagen</label><br>
+				<label><input type="radio" name="marcacarro" value="ford"> Ford</label> <br>
+				<label><input type="radio" name="marcacarro" value="otromarca">Otro <input type="text"
+						name="other_reason" /></label>
+			</div>
+			<div>
+				Seleccione Estilo de carro favorito:<br>
+				<label><input type="radio" name="estilocarr" value="verde" required> Familiar</label><br>
+				<label><input type="radio" name="estilocarr" value="azul"> Camioneta</label><br>
+				<label><input type="radio" name="estilocarr" value="rojo"> Deportivo</label> <br>
+				<label><input type="radio" name="estillocarr" value="otroestilo">Otro <input type="text"
+						name="other_reason" /></label>
+			</div>
+			<div>
+				Seleccione Modelo de carro favorito:<br>
+				<label><input type="radio" name="modelocarr" value="modeo1" required> Abarth. 124 Spider.
+					595.</label><br>
+				<label><input type="radio" name="modelocarr" value="modelo2"> Bugatti</label><br>
+				<label><input type="radio" name="modelocarr" value="modelo3"> BMW. X6.</label> <br>
+				<label><input type="radio" name="modelocarr" value="modeootro">Otro <input type="text"
+						name="other_reason" /></label>
+			</div>
+			<div slider id="slider-distance">
+				<div>
+					Cuanto pagaria por el carro
+					<div inverse-left style="width:70%;"></div>
+					<div inverse-right style="width:70%;"></div>
+					<div range style="left:30%;right:40%;"></div>
+					<span thumb style="left:30%;"></span>
+					<span thumb style="left:60%;"></span>
+					<div sign style="left:30%;">
+						<span id="value">0COP</span>
+					</div>
+					<div sign style="left:60%;">
+						<span id="value">100000COP</span>
+					</div>
+				</div>
+				<input type="range" tabindex="0" value="0" max="100000" min="0" step="1" oninput="
+				this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+				var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+				var children = this.parentNode.childNodes[1].childNodes;
+				children[1].style.width=value+'%';
+				children[5].style.left=value+'%';
+				children[7].style.left=value+'%';children[11].style.left=value+'%';
+				children[11].childNodes[1].innerHTML=this.value;" />
+
+				<input type="range" tabindex="0" value="100000" max="100000" min="0" step="1" oninput="
+				this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+				var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+				var children = this.parentNode.childNodes[1].childNodes;
+				children[3].style.width=(100-value)+'%';
+				children[5].style.right=(100-value)+'%';
+				children[9].style.left=value+'%';children[13].style.left=value+'%';
+				children[13].childNodes[1].innerHTML=this.value;" />
+			</div>
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+					correctamente. </p>
+			</div>
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</form>
+
+</html>
